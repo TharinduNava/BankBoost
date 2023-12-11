@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/screen7img"
+    android:orientation="vertical"
+    tools:context=".AboutFragment">
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/aboutImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/aboutTitle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        card_view:srcCompat="@drawable/applogo" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:layout_below="@id/aboutImage"
+        android:text="Welcome to BankBoost! \nYour one-stop solution for all your banking needs in Sri Lanka. Our app allows you to easily access and compare the interest rates of every bank in the country. With just a few clicks, you can find the best rates for savings accounts, fixed deposits, loans, and more.
+
+In addition to providing comprehensive rate information, our app also displays the locations of every bank branch in Sri Lanka, so you can easily find the one closest to your current location. This feature is especially useful for travelers or those who are new to the area.
+
+With BankBoost, you can stay on top of the latest banking rates and make informed decisions about where to put your money. \nSo, Happy Boosting Guys!"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aboutCopy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/aclonica"
+        android:layout_below="@id/aboutText"
+        android:text="2023 ⓒ BankBoost \nby Tharindu Hettige"
+        android:textColor="@color/blue"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

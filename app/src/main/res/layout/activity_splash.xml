@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashimg"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="BankBoost"
+        android:textColor="#393184"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/splashPower"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/splashTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/blue"
+        android:max="100"
+        android:progress="0" />
+
+    <com.example.bankboost.TypingAnimation
+        android:id="@+id/splashPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashPower"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

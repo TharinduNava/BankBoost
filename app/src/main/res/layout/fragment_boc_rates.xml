@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen9img"
+    android:orientation="vertical"
+    tools:context=".BOCRatesFragment">
+
+    <TextView
+        android:id="@+id/bocRatesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Rates"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/bocRatesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/bocRatesTitle"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Per Annum (P.A.) means, \nonce per year"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/bocSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/bocRatesText"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/button_edit"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        card_view:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        android:layout_below="@id/bocRatesText"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bocSpinner"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/bocRatesImage"
+                android:layout_width="wrap_content"
+                android:layout_height="1000dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

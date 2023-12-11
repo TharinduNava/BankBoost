@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen7img"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="BankBoost"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/homeTitle"
+        android:layout_centerInParent="true"
+        card_view:srcCompat="@drawable/homeimg" />
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:layout_below="@id/homeImage"
+        android:layout_marginTop="20dp"
+        android:padding="30dp"
+        android:text="To view the details, please select your \npreferred Bank from the below list!"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="-20dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank1"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/combankimg"
+                android:foreground="?attr/selectableItemBackground" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank2"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/bocimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank3"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/peoplesimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank4"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/sampathimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank5"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/hnbimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank6"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/seylanimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank7"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dfccimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank8"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/nsbimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank9"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/panasiaimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBank10"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/ntbimg"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:elevation="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "138221008433",
+    "project_id": "bankboostapp",
+    "storage_bucket": "bankboostapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138221008433:android:95494b2920534b84ae0710",
+        "android_client_info": {
+          "package_name": "com.example.bankboost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138221008433-h1p54hki8c3emupf7ona23gth119ra8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankboost",
+            "certificate_hash": "bd91de47f3ff4538cf44ff0d17b4e08ea4beed08"
+          }
+        },
+        {
+          "client_id": "138221008433-l05curuqump76v38f8rhdpl02fnhjg0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATwQXvOD-wl3n-SGZ1o_WZabZ1QDkG8Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138221008433-l05curuqump76v38f8rhdpl02fnhjg0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

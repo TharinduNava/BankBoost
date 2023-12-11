@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen7img"
+    android:orientation="vertical"
+    tools:context=".BOCDetailsFragment">
+
+    <TextView
+        android:id="@+id/bocDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/bocDetailsImage"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/bocDetailsTitle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        card_view:srcCompat="@drawable/bocimg" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/bocDetailsImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/bocDetailsText1"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:gravity="fill"
+                android:text="Bank of Ceylon (BOC) is a state-owned, major commercial bank in Sri Lanka. Its head office is located in an iconic cylindrical building in Colombo.
+
+The bank has a network of 651 branches, 715 automated teller machines (ATMs), 159 CDM, 582 CRM network, and 15 regional loan centres within the country. It also has an around-the-clock call centre and an around the clock branch at its Colombo office.
+
+In addition to the local presence, the bank maintains an off-shore banking unit in the head office in Colombo, three branches in Malé, Chennai, and Seychelles, and a subsidiary in London."
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/bocDetailsVideo"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="40dp"
+                app:autoPlay="false"
+                app:videoId="pUtXIZdexG8" />
+
+            <TextView
+                android:id="@+id/bocDetailsText2"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="fill"
+                android:text="Bank of Ceylon (BOC) was founded in 1939, with Sir Ernest de Silva as its first chairman. At the time, Ceylon was a British colony and the then governor Sir Andrew Caldecott ceremoniously opened the bank on 1 August. The British government introduced the banking arm for its government-oriented businesses. Two years later, in 1941, BoC started to expand beyond the city of Colombo. It opened its first branch in Kandy. Subsequently, BOC added branches in major cities such as Galle, Jaffna, Kurunegala, Batticaloa, Trincomalee, Badulla, and Panadura."
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
